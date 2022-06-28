@@ -13,10 +13,10 @@
             <img src="logo.png" alt="" class="logo">
             <nav>
                 <ul id="menuList">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Sports & Hobbies</a></li>
-                    <li><a href="">Movies & Music</a></li>
-                    <li><a href="">Programming Languages</a></li>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="sports.html">Sports & Hobbies</a></li>
+                    <li><a href="movies.html">Movies & Music</a></li>
+                    <li><a href="prog.html">Programming Languages</a></li>
                     <li><a href="">Contacts</a></li>
                 </ul>
             </nav>
@@ -25,14 +25,35 @@
 
         <div class="row">
             <div class="col-1">
-                
-                <h2>Favprite Sports and Hobbies</h2>
-                
-               
+                <h2>Favorite Sports and Hobbies</h2>
             </div>
+        </div>
+
+        <div class="sports">
+            <img src="badminton.jpg" alt="" class="badminton">
+            <img src="singing.jpg" alt="" class="badminton">
+            <img src="video-e.jpg" alt="" class="badminton">
+            <img src="playing.jpg" alt="" class="badminton">
+            <img src="watching.jpg" alt="" class="badminton">
+            <img src="listening.jpg" alt="" class="badminton">
         </div>
 
        
     </div>
+
+    <script>
+        var menuList=document.getElementById("menuList");
+        menuList.style.maxHeight ="0px";
+        function togglemenu(){
+            if (menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight ="200px";
+            }
+
+            else {
+                menuList.style.maxHeight ="0px";
+            }
+        }
+    </script>
 </body>
 </html>
