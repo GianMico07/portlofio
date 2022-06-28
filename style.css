@@ -96,8 +96,15 @@ nav ul li a:hover{
     margin-left: 10px;
 }
 
-.col-1 h2{
-    font-size: 54px;
+.prog-label{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 10px;
+}
+
+.prog-label h2{
+    font-size: 24px;
+    width: 800px;
 }
 
 .col-1 p{
@@ -224,15 +231,62 @@ button:hover{
     margin-top: 30px;
     margin-right: 20px;
     cursor: pointer;
+    transition: 0.2s;
+}
 
+.badminton:hover{
+    transform: scale(1.05);
 }
 
 iframe{
     margin: 0,30px;
 }
 
+.col-1 h1{
+    font-size: 40px;
+}
 
 
+
+.fb{
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.fb a{
+    position: relative;
+    top:-35px;
+}
+
+.gmail a{
+    position: relative;
+    top:-35px;
+}
+
+.ig a{
+    position: relative;
+    top:-35px;
+}
+
+.social{
+
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.soc-media{
+    display: inline-block;
+    width: 40px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
 
 
 
@@ -297,7 +351,12 @@ iframe{
     .col-1{
         flex-basis: 100%;
     }
+
+    .col-1 h1{
+        font-size: 34px;
+    }
     
+
     .col-1 h2{
         font-size: 34px;
     }
