@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="navbar">
+            <img src="logo.png" alt="" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="sports.html">Sports & Hobbies</a></li>
+                    <li><a href="">Movies & Music</a></li>
+                    <li><a href="">Programming Languages</a></li>
+                    <li><a href="">Contacts</a></li>
+                </ul>
+            </nav>
+            <img src="menu.png" class="menu-icon" alt="" onclick="togglemenu()">
+        </div>
+
+
+
+
+        <div class="row-about">
+            <div class="col-3">
+                <img src="prof1.jpg" alt="" srcset="" class="prof1">
+
+            </div>
+
+            <div class="col-4">
+                <h2 class="habout">About Me</h2>
+                <p>Hello there! My name is Gian Angelo Mico. I am 21 years old and live in Barangay Silangan Calauan, Laguna. I am currently studying at Laguna State Polytechnic University in San Pablo, Laguna. My course that I am taking is information technology. I am so happy that I’m in my third college now. One more year and then I graduate. Anyway, when I'm bored, I play games like Left 4 Dead 2, It Takes Two, etc. Singing is my favorite hobby. I tried to sing and cover my favorite songs.</p>
+                <h3>My Skills Set</h2>
+                    <div class="images">
+                        <img src="time.png" alt="" class="icons">
+                        <img src="comm.png" alt="" class="icons">
+                        <img src="team.png" alt="" class="icons">
+                        <img src="problem-solving.png" alt="" class="icons">
+                    </div>
+
+                    <div class="text">
+                        <label class="text-1" for="">Team Management</label>
+                        <label class="comm2" for="">Communication</label>
+                        <label class="team" for="">Teamwork</label>
+                        <label class="prob" for="">Problem Solver</label>
+                    </div>
+
+                   
+                    
+            
+            </div>
+
+                
+        </div>
+
+        
+
+       
+    </div>
+
+    <script>
+        var menuList=document.getElementById("menuList");
+        menuList.style.maxHeight ="0px";
+        function togglemenu(){
+            if (menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight ="200px";
+            }
+
+            else {
+                menuList.style.maxHeight ="0px";
+            }
+        }
+    </script>
+</body>
+</html>
