@@ -1,405 +1,78 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon-logo-60.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="logo-60.png">
+    <meta name="theme-color" content="white"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="My Portfolio">
+    <meta name="msapplication-TileImage" content="logo-90.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <script src="//cdn.delight-vr.com/latest/dl8-f5bde73f1cb3099887783265e9e02e2bb0f6e102.js" async></script>
+    <meta name="dl8-customization-primary-color" content="#ec1b2d">
+  <meta name="dl8-customization-brand-name" content="Your Brand Name">
+  <meta name="dl8-customization-brand-logo" content="your-brand-logo.png">
+  <meta name="dl8-customization-brand-url" content="https://your-website.com">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="logo.png" alt="" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="sports.html">Sports & Hobbies</a></li>
+                    <li><a href="movies.html">Movies & Music</a></li>
+                    <li><a href="prog.html">Programming Languages</a></li>
+                    <li><a href="contact.html">Contacts</a></li>
+                </ul>
+            </nav>
+            <img src="menu.png" class="menu-icon" alt="" onclick="togglemenu()">
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+                <h3>Hello,</h3>
+                <h1>I'm Gian Angelo</h1>
+                <p>Cinematographer & College Student in Laguna State Polytechnic University</p>
+                <a style="text-decoration: none;" href="about.html"><button type="button">Read More<img src="arrow.png"></button></a>
+            </div>
+            <div class="col-2">
+                <dl8-video
+                title="Example Video"
+                author="Jane Doe"
+                format="MONO_360"
+                display-mode="fullscreen"
+            >
+                <source src="https://vod-progressive.akamaized.net/exp=1657027110~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2880%2F8%2F214401712%2F738659261.mp4~hmac=43e02c1928874d80e6521cfdeeef78bf36ffcff666c3f6b4eb7a405249224f4e/vimeo-prod-skyfire-std-us/01/2880/8/214401712/738659261.mp4?download=1&filename=ayutthaya_-_easy_tripod_paint_%7C_360%2Fvr_master_series_%7C_free_download+%28540p%29.mp4" type="video/mp4" />
+                <source src="video.webm" type="video/webm" />
+            </dl8-video>
+            </div>
+        </div>
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-}
-
-.container{
-    width: 100%;
-    min-height: 100vh;
-    padding-left: 8%;
-    padding-right: 8%;
-    box-sizing: border-box;
-    overflow: hidden;
-}
-
-.navbar{
-    width: 100%;
-    display: flex;
-    margin-top: 1em;
-    align-items: center;
-    overflow: hidden;
-}
-
-.menu-icon{
-    width: 25px;
-    cursor: pointer;
-    display: none;
-}
-
-.habout{
-    background-color: #F9C600;
-    width: 190px;
-    padding-left: 20px;
-}
-
-.about-info{
-    font-size: 18px; 
-    margin-top: 10px;
-}
-
-.logo{
-    width: 60px;
-    cursor: pointer;
-    margin: 0;
-    padding-top: 30px;
-}
-
-nav{
-    flex: 1;
-    text-align: right;
-}
-
-nav ul li{
-    list-style: none;
-    display: inline-block;
-    margin-right: 30px;
-}
-
-nav ul li a{
-    text-decoration: none;
-    color: #000;
-    font-size: 14px;
-}
-
-nav ul li a:hover{
-    color: #FD2D13;
-}
-
-.row{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 150px;
-}
-
-.row-about{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 150px;
-}
-
-
-.skills{
-    text-align: center;
-    font-size: 20px;
-}
-
-
-.col-1{
-    flex-basis: 40%;
-    position: relative;
-    margin-left: 10px;
-}
-
-.prog-label{
-    flex-basis: 40%;
-    position: relative;
-    margin-left: 10px;
-}
-
-.prog-label h2{
-    font-size: 24px;
-    width: 800px;
-}
-
-.col-1 p{
-    font-size: 20px;
-    width: 500px;
-    margin-bottom: 20px;
-}
-
-.col-4 p{
-    padding-top: 1em;
-    margin-bottom: 20px;
-}
-
-.time-mng{
-    align-items: center;
-    text-align: center;
-    display: block;
-    width: 200px;
-    overflow: hidden;
-}
-
-
-.icons{
-    width: 80px;
-    display: inline-block;
-    padding-right: 50px;
-    margin-bottom: 10px;
-}
-
-.images{
-    margin-top: 20px;
-    margin-left: 20px;
-}
-
-
-
-label{
-    font-size: 14px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 500; 
-}
-
-.comm2{
-    margin-left: 10px;
-}
-
-.team{
-    margin-left: 40px;
-}
-
-.prob{
-    margin-left: 50px;
-}
-
-button{
-    width: 140px;
-    border: 0;
-    padding: 12px 10px;
-    outline: none;
-    color: #fff;
-    background: linear-gradient(to right, #F9C600,#FD2D13);
-    border-radius: 6px;
-    cursor: pointer;
-    transition: width 0.5s;
-}
-
-button img{
-    width: 30px;
-    display: none;
-}
-
-button:hover img{
-    display: block;
-}
-
-button:hover{
-    width: 160px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.col-2{
-    position: relative;
-    flex-basis: 60%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.col-2 .profile{
-    width: 60%;
-}
-
-.col-3{
-    margin-right: 50px;
-    
-}
-
-.col-4{  
-    display: block;
-    margin-left: 200px;
-}
-
-.col-4 h2{
-    font-size: 34px;
-}
-
-.prof1{
-    border-radius: 20px;
-    margin-left: 200px;
-    width: 100%;
-}
-
-.sports{
-    text-align: center;
-    margin-bottom: 50px;
-    margin: 0, 10px;
-}
-
-.badminton{
-    width: 30%;
-    border-radius: 30px;
-    margin-top: 30px;
-    margin-right: 20px;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-.badminton:hover{
-    transform: scale(1.05);
-}
-
-iframe{
-    margin: 0,30px;
-}
-
-.col-1 h1{
-    font-size: 40px;
-}
-
-
-
-.fb{
-    display: inline-block;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
-}
-
-a{
-    text-decoration: none;
-    color: black;
-}
-
-.fb a{
-    position: relative;
-    top:-35px;
-}
-
-.gmail a{
-    position: relative;
-    top:-35px;
-}
-
-.ig a{
-    position: relative;
-    top:-35px;
-}
-
-.social{
-
-    margin-top: 50px;
-    margin-left: 20px;
-}
-
-.soc-media{
-    display: inline-block;
-    width: 40px;
-    margin-bottom: 20px;
-    margin-right: 10px;
-}
-
-
-
-
-@media only screen and (max-width:700px){
-    nav ul{
-        width: 100%;
-        background: linear-gradient(to right, #fb5283,#ff3527);
-        position: absolute;
-        top: 75px;
-        right: 0;
-        z-index: 2;
-    }
-
-    nav ul li{
-        display: block;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    nav ul li a{
-        color: #fff;
-    }
-
-    .menu-icon{
-        display: block;
-    }
-
-    .logo{
-        padding: 0;
-    }
-
-    #menuList{
-        overflow: hidden;
-        transition: 0.5s;
-    }
-
-    .row{
-        flex-direction: column-reverse;
-        margin: 10px, 0;
-        width: 100%;
-
-
-    }
-
-    .row-about{
-        flex-direction: column-reverse;
-        margin: 50px 0;
-    }
-
-    .col-4{
-        flex-basis: 100%;
-        margin-left: 0;
-    }
-
-    .prof1{
-        display: none;
-    }
-
-    .col-2{
-        flex-basis: 100%;
-        margin-bottom: 50px;
-    }
-
-    .col-1{
-        flex-basis: 100%;
-    }
-
-    .col-1 h1{
-        font-size: 34px;
-    }
-    
-
-    .col-1 h2{
-        font-size: 34px;
-    }
-    
-    .col-1 p{
-        font-size: 18px;
-        width: 300px;
-        margin-bottom: 20px;
-    }
-
-    .icons{
-        width: 20%;
-        padding-right: 10px;
-    }
-
-    .images{
-        margin-left: 0;
-    }
-
-    label{
-        font-size: 12px;
-        font-family: 'Inter', sans-serif;
        
-    }
+    </div>
 
-    label{
-        display: none;
-    }
+    <script>
+        var menuList=document.getElementById("menuList");
+        menuList.style.maxHeight ="0px";
+        function togglemenu(){
+            if (menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight ="200px";
+            }
 
-    .sports{
-        text-align: center;
-        margin-bottom: 10px;
-    }
-    
-    .badminton{
-        width: 100%;
-        border-radius: 30px;
-        margin-right: 30px;
-        margin-bottom: 30px;
-        margin-top: 0;
-    }
-
-}
+            else {
+                menuList.style.maxHeight ="0px";
+            }
+        }
+    </script>
+</body>
+</html>
