@@ -14,6 +14,11 @@
     <meta name="apple-mobile-web-app-title" content="My Portfolio">
     <meta name="msapplication-TileImage" content="logo-90.png">
     <meta name="msapplication-TileColor" content="#FFFFFF">
+    <script src="//cdn.delight-vr.com/latest/dl8-f5bde73f1cb3099887783265e9e02e2bb0f6e102.js" async></script>
+    <meta name="dl8-customization-primary-color" content="#ec1b2d">
+  <meta name="dl8-customization-brand-name" content="Your Brand Name">
+  <meta name="dl8-customization-brand-logo" content="your-brand-logo.png">
+  <meta name="dl8-customization-brand-url" content="https://your-website.com">
     <title>My Portfolio</title>
 </head>
 <body>
@@ -40,7 +45,15 @@
                 <a style="text-decoration: none;" href="about.html"><button type="button">Read More<img src="arrow.png"></button></a>
             </div>
             <div class="col-2">
-                <img src="prof.png" alt="" class="profile">
+                <dl8-video
+                title="Example Video"
+                author="Jane Doe"
+                format="MONO_360"
+                display-mode="fullscreen"
+            >
+                <source src="video.mp4" type="video/mp4" />
+                <source src="video.webm" type="video/webm" />
+            </dl8-video>
             </div>
         </div>
 
